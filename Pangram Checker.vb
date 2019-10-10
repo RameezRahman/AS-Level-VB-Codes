@@ -3,7 +3,7 @@
     Private Property Aplhabet As String
 
     Sub Main()
-        Dim Aplhabet, Str1, Pangram As String
+            Dim Aplhabet, Str1, pangram As String
         Dim Count As Integer
         Dim Ispangram As Boolean
 
@@ -11,8 +11,10 @@
         str1 = ""
         count = 0
         Ispangram = False
+        pangram = ""
+        
 
-        Console.Write('PANGRAM CHECKER AT YOUR SERVICE!') 
+        Console.Write("PANGRAM CHECKER AT YOUR SERVICE!") 
 
         Console.WriteLine("Enter The Suspected Sentence To Check Whether It's A Pangram Or Not")
         Str1 = Console.ReadLine
@@ -31,8 +33,10 @@
         If Ispangram = True Then
 
             Console.WriteLine("the suspected sentence is indeed a pangram")
+            Console.ReadKey
         Else
-            Console.WriteLine("the entered string is not a pangram")
+            Console.WriteLine("the entered sentence is not a pangram(Sed Lyf)")
+            Console.ReadKey
         End If
     End Sub
 
