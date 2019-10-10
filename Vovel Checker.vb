@@ -3,26 +3,26 @@
     Sub Main()
 
         Dim str, vovel As String
-        Dim count, noOfVovels As Integer
+        Dim count, NoOfVovels As Integer
 
         str = ""
         vovel = "AEIOU"
         count = 0
-        noOfVovels = 0
+        NoOfVovels = 0
 
-        Console.Write("Enter the string to be checked: ")
+        Console.Write("Enter The String That Needs To Be Checked: ")
         str = Console.ReadLine
 
         str = UCase(str)
 
         For count = 1 To Len(str)
             If InStr(vovel, Mid(str, count, 1)) > 0 Then
-                noOfVovels = noOfVovels + 1
+                NoOfVovels = NoOfVovels + 1
             End If
         Next
 
-        Console.WriteLine("the nn of vovels in the entered string is: " & noOfVovels)
-        Console.ReadKey()
+    Console.WriteLine("the number of vovels in the entered string is: " & NoOfVovels)
+    Console.ReadKey()
     End Sub
 
 
