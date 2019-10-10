@@ -1,0 +1,30 @@
+Declare Alphabet as String
+Declare Str1 as STRING
+Declare Count as INTEGER 
+Declare Ispangram as BOOLEAN
+
+Aplh = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+str1 = ""
+count = 0
+ispangram = #FALSE#
+
+OUTPUT "Enter The Suspected Sentence To Check Whether It's A Pangram Or Not"
+INPUT str1
+IF LENGTH(str1)>= 26
+  THEN
+    ispangram = #TRUE#
+    FOR count = 1 to 26
+        IF LOCATE(str1, MID(Aplh, count, 1))= 0 
+          THEN
+            ispangram = #FALSE# 
+            EXITFOR
+        ENDIF
+    NEXT
+ENDIF
+
+IF ispangram = #true#
+  THEN
+    OUTPUT "the suspected sentence is indeed a pangram"
+  ELSE
+    OUTPUT "the entered string is not a pangram"
+ENDIF 
