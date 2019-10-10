@@ -1,0 +1,24 @@
+DECLARE String as STRING
+DECLARE Vovels as STRING
+DECLARE Count as INTEGER
+DECLARE Noofvovels as INTEGER
+
+str = ""
+Vovels = "AEIOU"
+Count = 0
+Noofvovels = 0
+
+OUTPUT "Enter The Sentence That Needs To Be Checked"
+INPUT str
+
+Str = UPPER(str)
+
+For Count = 1 to LENGTH(str)
+    IF LOCATE(Vovel,MID(str,count,1)
+       Then
+       Noofvovels = Noofvovels + 1
+    ENDIF
+NEXT
+
+OUTPUT "The Number of Vovels In The Entered String Is",Noofvovels 
+       
