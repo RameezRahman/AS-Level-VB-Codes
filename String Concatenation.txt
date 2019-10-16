@@ -1,0 +1,33 @@
+DECLARE WordString1 As STRING
+DECLARE WordString2 As STRING
+DECLARE WordString3 As STRING
+DECLARE Firstword As STRING
+DECLARE Lastword As STRING
+DECLARE Xb As INTEGER
+
+
+WordString1 = " "
+WordString2 = " "
+WordString3 = " "
+Firstword = " "
+Lastword = " "
+Xb = 0
+
+
+OUTPUT "Enter The 1st string that contains only 2 words: "
+INPUT WordString 1
+
+
+OUTPUT "Enter THE 2nd string that contains only 2 words: "
+INPUT WordString2
+
+Xb = LOCATE(WordString1, " ")
+Firstword = LEFT(WordString1, Xb -1)
+
+Xb = LOCATE(WordString2, " ")
+Lastword = RIGHT(WordString2, LENGTH(WordString2) -Xb)
+
+
+WordString3 = Firstword & " " & LastWord
+
+OUTPUT WordString3
